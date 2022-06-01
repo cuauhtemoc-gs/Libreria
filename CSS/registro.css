@@ -1,0 +1,192 @@
+*{/*Estilo global*/
+    font-size: 12px;/* Tamaño */
+}
+
+body{
+        background:url(../img/libros2.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+a {/* Enlaces */
+    color: var(--primary-color);
+    text-decoration: none; /*Quitar subrallado*/
+    padding: 0px;
+    transition: color 0.2s ease-in-out   
+}
+a:hover{
+    color:var(--highlight-color);
+}
+
+h2, h3{
+    line-height: 0.5; 
+}
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+
+
+.container{
+    width: 1920px;
+}
+
+/* MENU */
+.menu-container{
+    background-color: white;
+    margin:  0 auto;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+}
+.menu-container .logo {
+    width: 10%; 
+    margin:  0 auto;
+    padding: 0;
+}
+.menu-container .logo img{
+    width: 100%; 
+}
+.menu{
+    line-height: 90px;    
+    width: 85%; 
+    padding-left: 20px;
+}
+.menu-sup{
+    background-color: white;
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    align-items: center;
+}
+.menu-sup ul {
+    list-style: none;/* Quitar estilos por defecto */
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    line-height: 1.5;
+    text-align: center;
+    padding-right: 10px;
+}
+.menu-sup a{
+    font-size: 1rem;
+}
+.menu-sup .form{
+    width: 200px;
+    margin: 0 auto;
+    height: 30px;
+}
+
+.buscador{
+    display: flex;
+    width: 200px;
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+}
+ .buscador button{
+     height: 30px;
+ }
+  form input{
+    height: 30px;
+}
+.menu-inf{
+    background-color: white;
+    height: 50%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.menu-inf .button-carrito{
+    height: 30px;
+    width: 95px;
+}
+
+
+.menu-inf  a{
+    border: 1px solid #000;
+    flex-grow: 1;
+    padding: 10px;
+    height: 15px;   
+}
+
+.menu-inf a{
+    font-size: 1.5rem;
+}
+
+.menu-inf a:hover{
+background: #ef8354;
+}
+
+/*PIE DE PAGINA*/
+.contact{
+    background-color: black;
+    padding-top: 150px;
+    color: var(--background-color);
+    padding: 20px;
+}
+.contact-container{
+    display: flex;
+    gap: 10px;
+    color: white;
+    width: 100%;
+    margin: 0 auto; 
+}
+.contact-container h2{ 
+    font-size: 20px; 
+}
+.contact-container-logo{
+    width: 8%;
+}
+.contact-container-info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    line-height: 1.5;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+.contact-container-logo img{
+    width: 100%; 
+}
+.contact-container .contacto h3{
+    font-size: 15px;
+}
+.contact-container .social h3{
+    font-size: 15px;
+}
+.contact-container .social a:hover path{
+    fill: gray;
+}
+.contact-container .empresa h3{ 
+    font-size: 15px;
+}
+.contact-container .empresa a{ 
+    color: white;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    font-size: 15px; 
+}
+.contact-container .empresa a:hover{
+    color: gray;
+}
